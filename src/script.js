@@ -36,6 +36,7 @@ function checkMatch(){
         setTimeout(() => {
             alert("Won!!!");
         }, 500)
+        afterGameEnds();
         
     }
 }
@@ -69,6 +70,13 @@ function shuffle(){
     }
 
     )
+}
+
+function afterGameEnds(){
+    
+    shuffle();
+    resetBoard();
+
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));

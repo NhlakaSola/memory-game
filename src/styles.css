@@ -7,9 +7,13 @@
 
 body{
     height: 80vh;
-    display: flex;
     background-color: #007dff;
 
+}
+ 
+.centred{
+    display: flex;
+    justify-content: center;
 }
 
 .memory-game{

@@ -63,20 +63,22 @@ function resetBoard() {
 }
 
 
-function shuffle(){
+(function shuffle(){
     cards.forEach( cards => {
         let shuffler = Math.floor(Math.random() * 12);
         cards.style.order = shuffler;
     }
 
     )
-}
+})();
 
-function afterGameEnds(){
+function restart(){
+    var okToRefresh = confirm("Do you want to play again?");
+    if (okToRefresh){
+        setTimeout("location.reload(true);",500);
+        shuffle();
+    }
     
-    shuffle();
-    resetBoard();
-
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));

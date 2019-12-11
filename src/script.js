@@ -34,8 +34,6 @@ function checkMatch(){
         setTimeout(() => {
             alert("Won!!!");
         }, 500)
-        afterGameEnds();
-        
     }
 }
 
@@ -81,3 +79,7 @@ function restart(){
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+module.exports = {
+    restart,shuffle, flipCard,unFlipCards,resetBoard,disableCards
+}

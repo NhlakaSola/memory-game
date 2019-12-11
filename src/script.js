@@ -5,7 +5,6 @@ let lockBoard = false;
 let firstCard, secondCard; 
 let count = 0;
 
-
 function flipCard(){
     if (lockBoard) return;
     if (this === firstCard) return
@@ -15,7 +14,6 @@ function flipCard(){
     if (!hasFlippedCard) {
         hasFlippedCard = true;
         firstCard = this;
-
         return;
     }
 
@@ -78,7 +76,8 @@ function restart(){
         setTimeout("location.reload(true);",500);
         shuffle();
     }
-    
+ 
 }
+
 
 cards.forEach(card => card.addEventListener('click', flipCard));

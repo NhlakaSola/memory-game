@@ -41,6 +41,7 @@ body{
   }
 
   .gameTile {
+    border:  #3498db ;
     display: inline;
     margin: 5px;
     position: relative;

@@ -103,3 +103,5 @@ function shuffleArray(array){
     }
     return array;
 }
+
+module.exports = {shuffleArray,checkSrc,cardFlip,isInArray,gameOver,startGame,buildArray,buildBoard, hideCard, pickCard}
